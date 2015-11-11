@@ -7,3 +7,12 @@ c:\users\joshua\documents\visual studio 2015\Projects\PA-1-Executable\PA-1-Execu
 c:\users\joshua\documents\visual studio 2015\Projects\PA-1-Executable\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache
 c:\users\joshua\documents\visual studio 2015\Projects\PA-1-Executable\PA-1-Executable\obj\Debug\PA-1-Executable.exe
 c:\users\joshua\documents\visual studio 2015\Projects\PA-1-Executable\PA-1-Executable\obj\Debug\PA-1-Executable.pdb
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe.config
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.exe
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.pdb
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.pdb
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csprojResolveAssemblyReference.cache
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Form1.resources
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Properties.Resources.resources
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache

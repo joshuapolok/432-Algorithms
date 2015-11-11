@@ -54,7 +54,6 @@
             this.mergeBox.Name = "mergeBox";
             this.mergeBox.Size = new System.Drawing.Size(258, 264);
             this.mergeBox.TabIndex = 2;
-            this.mergeBox.SelectedIndexChanged += new System.EventHandler(this.mergeBox_SelectedIndexChanged);
             // 
             // quickBox
             // 
@@ -63,7 +62,6 @@
             this.quickBox.Name = "quickBox";
             this.quickBox.Size = new System.Drawing.Size(258, 264);
             this.quickBox.TabIndex = 3;
-            this.quickBox.SelectedIndexChanged += new System.EventHandler(this.quickBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -74,7 +72,6 @@
             this.label1.Size = new System.Drawing.Size(247, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Input a stream of integers to sort";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -102,7 +99,6 @@
             this.inputStream.Name = "inputStream";
             this.inputStream.Size = new System.Drawing.Size(454, 20);
             this.inputStream.TabIndex = 1;
-            this.inputStream.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -119,7 +115,6 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "432 Algorithms";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
