@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Timers;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PA_1_Executable
 {
@@ -20,6 +21,9 @@ namespace PA_1_Executable
         public Stopwatch watch2 = new Stopwatch();
         public TimeSpan span1;
         public TimeSpan span2;
+
+        public static string textFileName = @"PA-1-Ouput-Chart.txt";
+        public string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, textFileName);
 
         public Form1()
         {
@@ -46,7 +50,7 @@ namespace PA_1_Executable
         {
             quickBox.Items.Clear();
             mergeBox.Items.Clear();
-
+            var a = path;
             var text = inputStream.Text;
             var list = new List<string>();
 
@@ -75,7 +79,39 @@ namespace PA_1_Executable
             span2 = watch2.Elapsed;
             mergeLabel.Text = "Merge Sort Time: " + span2;
 
+            WriteFile(parsedList);
+
         }
+        public void WriteFile(List<int> list)
+        {
+
+            if (!File.Exists(textFileName))
+            {
+                // Create a file to write to.
+                using (StreamWriter sw = File.CreateText(textFileName))
+                {
+                    sw.WriteLine(path);
+                    foreach (var i in list)
+                    {
+                        sw.WriteLine(i);
+                    }
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.CreateText(textFileName))
+                {
+                    sw.WriteLine(path);
+                    foreach (var i in list)
+                    {
+                        sw.WriteLine(i);
+                    }
+                }
+                   
+            }
+
+         }
+
 
         /// <summary>
         /// Merge sort the items in the listbox
