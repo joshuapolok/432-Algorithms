@@ -53,33 +53,52 @@ namespace PA_1_Executable
             var a = path;
             var text = inputStream.Text;
             var list = new List<string>();
+            List<int> parsedList;
 
-            list = text.Split(',').ToList() ;
-
-           var parsedList = list.Select(int.Parse).ToList();
-
-            //print items to merge
-            foreach(var item in list)
+            if (text == "")
             {
-                mergeBox.Items.Add(item);
-                quickBox.Items.Add(item);
+                MessageBox.Show("Must have input");
             }
+            
+            else
+            {
 
-            watch1.Start();
-            QuickSort(parsedList, 0, parsedList.Count - 1);
-            watch1.Stop();
+                list = text.Split(',').ToList();
 
-            span1 = watch1.Elapsed;
-            quickLabel.Text = "Quick Sort Time: " + span1;
+                try
+                {
+                     parsedList = list.Select(int.Parse).ToList();
 
-            watch2.Start();
-            MergeSort(parsedList, 0, parsedList.Count - 1);
-            watch2.Stop();
+                    //print items to merge
+                    foreach (var item in list)
+                    {
+                        mergeBox.Items.Add(item);
+                        quickBox.Items.Add(item);
+                    }
 
-            span2 = watch2.Elapsed;
-            mergeLabel.Text = "Merge Sort Time: " + span2;
+                    watch1.Start();
+                    QuickSort(parsedList, 0, parsedList.Count - 1);
+                    watch1.Stop();
 
-            WriteFile(parsedList);
+                    span1 = watch1.Elapsed;
+                    quickLabel.Text = "Quick Sort Time: " + span1;
+
+                    watch2.Start();
+                    MergeSort(parsedList, 0, parsedList.Count - 1);
+                    watch2.Stop();
+
+                    span2 = watch2.Elapsed;
+                    mergeLabel.Text = "Merge Sort Time: " + span2;
+
+                    WriteFile(parsedList);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Integers only!");
+                }
+
+               
+            }
 
         }
         public void WriteFile(List<int> list)

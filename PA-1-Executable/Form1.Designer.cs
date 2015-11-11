@@ -105,18 +105,20 @@
             // mergeLabel
             // 
             this.mergeLabel.AutoSize = true;
+            this.mergeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mergeLabel.Location = new System.Drawing.Point(9, 308);
             this.mergeLabel.Name = "mergeLabel";
-            this.mergeLabel.Size = new System.Drawing.Size(91, 13);
+            this.mergeLabel.Size = new System.Drawing.Size(108, 13);
             this.mergeLabel.TabIndex = 7;
             this.mergeLabel.Text = "Merge Sort Time: ";
             // 
             // quickLabel
             // 
             this.quickLabel.AutoSize = true;
+            this.quickLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quickLabel.Location = new System.Drawing.Point(296, 308);
             this.quickLabel.Name = "quickLabel";
-            this.quickLabel.Size = new System.Drawing.Size(89, 13);
+            this.quickLabel.Size = new System.Drawing.Size(106, 13);
             this.quickLabel.TabIndex = 8;
             this.quickLabel.Text = "Quick Sort Time: ";
             // 
@@ -124,6 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(571, 339);
             this.Controls.Add(this.quickLabel);
             this.Controls.Add(this.mergeLabel);
