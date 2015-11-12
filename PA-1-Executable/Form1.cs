@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Diagnostics;
-using System.Timers;
 using System.Windows.Forms;
 using System.IO;
 
@@ -59,10 +53,13 @@ namespace PA_1_Executable
             {
                 MessageBox.Show("Must have input");
             }
+            else if (!text.Contains(","))
+            {
+                MessageBox.Show("Missing comma delimiter!");
+            }
             
             else
             {
-
                 list = text.Split(',').ToList();
 
                 try
@@ -96,8 +93,6 @@ namespace PA_1_Executable
                 {
                     MessageBox.Show("Integers only!");
                 }
-
-               
             }
 
         }
@@ -126,9 +121,7 @@ namespace PA_1_Executable
                         sw.WriteLine(i);
                     }
                 }
-                   
             }
-
          }
 
 
