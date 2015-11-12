@@ -254,19 +254,5 @@ namespace PA_1_Executable
                 QuickSort(elements, i, right);
             }
         }
-
-        private void destBtn_Click(object sender, EventArgs e)
-        {
-            // Show the FolderBrowserDialog.
-            DialogResult result = folderBrowserDialog1.ShowDialog();
-            if( result == DialogResult.OK )
-            {
-                var folderName = folderBrowserDialog1.SelectedPath;
-                outputTxt.Enabled = false;
-                outputTxt.Text = folderName;
-
-
-            }
-        }
     }
 }
