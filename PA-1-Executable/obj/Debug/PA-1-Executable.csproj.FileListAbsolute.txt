@@ -16,3 +16,12 @@ C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1
 C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Form1.resources
 C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Properties.Resources.resources
 C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe.config
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.exe
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.pdb
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.pdb
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csprojResolveAssemblyReference.cache
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Form1.resources
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Properties.Resources.resources
+C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache
