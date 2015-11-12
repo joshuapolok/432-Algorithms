@@ -37,6 +37,9 @@
             this.inputStream = new System.Windows.Forms.TextBox();
             this.mergeLabel = new System.Windows.Forms.Label();
             this.quickLabel = new System.Windows.Forms.Label();
+            this.destBtn = new System.Windows.Forms.Button();
+            this.outputTxt = new System.Windows.Forms.TextBox();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // submit
@@ -52,7 +55,7 @@
             // mergeBox
             // 
             this.mergeBox.FormattingEnabled = true;
-            this.mergeBox.Location = new System.Drawing.Point(86, 96);
+            this.mergeBox.Location = new System.Drawing.Point(103, 137);
             this.mergeBox.Name = "mergeBox";
             this.mergeBox.Size = new System.Drawing.Size(132, 199);
             this.mergeBox.TabIndex = 2;
@@ -60,7 +63,7 @@
             // quickBox
             // 
             this.quickBox.FormattingEnabled = true;
-            this.quickBox.Location = new System.Drawing.Point(348, 97);
+            this.quickBox.Location = new System.Drawing.Point(365, 138);
             this.quickBox.Name = "quickBox";
             this.quickBox.Size = new System.Drawing.Size(132, 199);
             this.quickBox.TabIndex = 3;
@@ -79,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 64);
+            this.label2.Location = new System.Drawing.Point(41, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 29);
             this.label2.TabIndex = 5;
@@ -89,7 +92,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(303, 64);
+            this.label3.Location = new System.Drawing.Point(320, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(230, 29);
             this.label3.TabIndex = 6;
@@ -106,7 +109,7 @@
             // 
             this.mergeLabel.AutoSize = true;
             this.mergeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mergeLabel.Location = new System.Drawing.Point(9, 308);
+            this.mergeLabel.Location = new System.Drawing.Point(26, 349);
             this.mergeLabel.Name = "mergeLabel";
             this.mergeLabel.Size = new System.Drawing.Size(108, 13);
             this.mergeLabel.TabIndex = 7;
@@ -116,18 +119,38 @@
             // 
             this.quickLabel.AutoSize = true;
             this.quickLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickLabel.Location = new System.Drawing.Point(296, 308);
+            this.quickLabel.Location = new System.Drawing.Point(313, 349);
             this.quickLabel.Name = "quickLabel";
             this.quickLabel.Size = new System.Drawing.Size(106, 13);
             this.quickLabel.TabIndex = 8;
             this.quickLabel.Text = "Quick Sort Time: ";
+            // 
+            // destBtn
+            // 
+            this.destBtn.Location = new System.Drawing.Point(43, 57);
+            this.destBtn.Name = "destBtn";
+            this.destBtn.Size = new System.Drawing.Size(54, 24);
+            this.destBtn.TabIndex = 9;
+            this.destBtn.Text = "Output";
+            this.destBtn.UseVisualStyleBackColor = true;
+            this.destBtn.Click += new System.EventHandler(this.destBtn_Click);
+            // 
+            // outputTxt
+            // 
+            this.outputTxt.Enabled = false;
+            this.outputTxt.Location = new System.Drawing.Point(103, 61);
+            this.outputTxt.Name = "outputTxt";
+            this.outputTxt.Size = new System.Drawing.Size(454, 20);
+            this.outputTxt.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(571, 339);
+            this.ClientSize = new System.Drawing.Size(630, 402);
+            this.Controls.Add(this.outputTxt);
+            this.Controls.Add(this.destBtn);
             this.Controls.Add(this.quickLabel);
             this.Controls.Add(this.mergeLabel);
             this.Controls.Add(this.label3);
@@ -156,6 +179,9 @@
         private System.Windows.Forms.TextBox inputStream;
         private System.Windows.Forms.Label mergeLabel;
         private System.Windows.Forms.Label quickLabel;
+        private System.Windows.Forms.Button destBtn;
+        private System.Windows.Forms.TextBox outputTxt;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

@@ -17,7 +17,6 @@ namespace PA_1_Executable
         public TimeSpan span2;
 
         public static string textFileName = @"PA-1-Ouput-Chart.txt";
-        public string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, textFileName);
 
         public Form1()
         {
@@ -44,7 +43,6 @@ namespace PA_1_Executable
         {
             quickBox.Items.Clear();
             mergeBox.Items.Clear();
-            var a = path;
             var text = inputStream.Text;
             var list = new List<string>();
             List<int> parsedList;
@@ -53,14 +51,18 @@ namespace PA_1_Executable
             {
                 MessageBox.Show("Must have input");
             }
-            else if (!text.Contains(","))
+            else if (!text.Contains(" "))
             {
-                MessageBox.Show("Missing comma delimiter!");
+                MessageBox.Show("Missing space delimiter!");
+            }
+            else if (outputTxt.Text == "")
+            {
+                MessageBox.Show("You must select an output destination!");
             }
             
             else
             {
-                list = text.Split(',').ToList();
+                list = text.Split(' ').ToList();
 
                 try
                 {
@@ -78,16 +80,20 @@ namespace PA_1_Executable
                     watch1.Stop();
 
                     span1 = watch1.Elapsed;
-                    quickLabel.Text = "Quick Sort Time: " + span1;
+                    quickLabel.Text = "Quick Sort Time: " + span1 + " Seconds";
 
                     watch2.Start();
                     MergeSort(parsedList, 0, parsedList.Count - 1);
                     watch2.Stop();
 
                     span2 = watch2.Elapsed;
-                    mergeLabel.Text = "Merge Sort Time: " + span2;
+                    mergeLabel.Text = "Merge Sort Time: " + span2 + " Seconds";
 
-                    WriteFile(parsedList);
+                    var outString = String.Format("{0,-20} {1,-30} {2,-20}", "Sort-Type", "Length", "Time") + Environment.NewLine;
+                    outString += String.Format("{0,-20} {1,-30} {2,-20}", "Merge Sort", mergeBox.Items.Count, span1 + " Seconds") + Environment.NewLine;
+                    outString += String.Format("{0,-20} {1,-30} {2,-20}", "Quick Sort", quickBox.Items.Count, span2 + " Seconds") + Environment.NewLine;
+
+                    WriteFile(outputTxt.Text, outString);
                 }
                 catch (FormatException)
                 {
@@ -96,34 +102,6 @@ namespace PA_1_Executable
             }
 
         }
-        public void WriteFile(List<int> list)
-        {
-
-            if (!File.Exists(textFileName))
-            {
-                // Create a file to write to.
-                using (StreamWriter sw = File.CreateText(textFileName))
-                {
-                    sw.WriteLine(path);
-                    foreach (var i in list)
-                    {
-                        sw.WriteLine(i);
-                    }
-                }
-            }
-            else
-            {
-                using (StreamWriter sw = File.CreateText(textFileName))
-                {
-                    sw.WriteLine(path);
-                    foreach (var i in list)
-                    {
-                        sw.WriteLine(i);
-                    }
-                }
-            }
-         }
-
 
         /// <summary>
         /// Merge sort the items in the listbox
@@ -253,6 +231,23 @@ namespace PA_1_Executable
             {
                 QuickSort(elements, i, right);
             }
+        }
+
+        private void destBtn_Click(object sender, EventArgs e)
+        {
+            // Show the FolderBrowserDialog.
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var folderName = folderBrowserDialog1.SelectedPath;
+                outputTxt.Enabled = false;
+                outputTxt.Text = folderName;
+            }
+        }
+
+        public void WriteFile(string path, string text)
+        {
+            File.WriteAllText(path + @"\\PA-1-Ouput-Chart.txt", text);
         }
     }
 }
