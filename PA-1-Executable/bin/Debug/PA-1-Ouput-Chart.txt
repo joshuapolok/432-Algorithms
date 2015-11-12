@@ -1,0 +1,3 @@
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Ouput-Chart.txt
+2
+3
