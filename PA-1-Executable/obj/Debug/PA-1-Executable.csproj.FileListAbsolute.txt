@@ -25,3 +25,12 @@ C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Ex
 C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Form1.resources
 C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Properties.Resources.resources
 C:\Users\Thanh\Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe.config
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.exe
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.pdb
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.exe
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\bin\Debug\PA-1-Executable.pdb
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csprojResolveAssemblyReference.cache
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Form1.resources
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA_1_Executable.Properties.Resources.resources
+D:\My Documents\GitHub\432-Algorithms\PA-1-Executable\obj\Debug\PA-1-Executable.csproj.GenerateResource.Cache
