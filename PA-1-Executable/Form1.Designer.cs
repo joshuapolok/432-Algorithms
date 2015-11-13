@@ -54,29 +54,33 @@
             // 
             // mergeBox
             // 
+            this.mergeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mergeBox.FormattingEnabled = true;
+            this.mergeBox.ItemHeight = 25;
             this.mergeBox.Location = new System.Drawing.Point(103, 137);
             this.mergeBox.Name = "mergeBox";
-            this.mergeBox.Size = new System.Drawing.Size(132, 199);
+            this.mergeBox.Size = new System.Drawing.Size(132, 179);
             this.mergeBox.TabIndex = 2;
             // 
             // quickBox
             // 
+            this.quickBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quickBox.FormattingEnabled = true;
+            this.quickBox.ItemHeight = 25;
             this.quickBox.Location = new System.Drawing.Point(365, 138);
             this.quickBox.Name = "quickBox";
-            this.quickBox.Size = new System.Drawing.Size(132, 199);
+            this.quickBox.Size = new System.Drawing.Size(132, 179);
             this.quickBox.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 8);
+            this.label1.Location = new System.Drawing.Point(127, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 17);
+            this.label1.Size = new System.Drawing.Size(403, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Input a stream of integers to sort";
+            this.label1.Text = "Input a stream of integers seperated by spaces to sort";
             // 
             // label2
             // 
@@ -147,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(630, 402);
             this.Controls.Add(this.outputTxt);
             this.Controls.Add(this.destBtn);
