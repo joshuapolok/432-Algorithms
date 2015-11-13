@@ -1,0 +1,8 @@
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Release\PA-1-Executable.exe.config
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Release\PA-1-Executable.exe
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\bin\Release\PA-1-Executable.pdb
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Release\PA_1_Executable.Form1.resources
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Release\PA_1_Executable.Properties.Resources.resources
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Release\PA-1-Executable.csproj.GenerateResource.Cache
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Release\PA-1-Executable.exe
+C:\Users\Joshua\Documents\Visual Studio 2015\Projects\Github\432-Algorithms\PA-1-Executable\obj\Release\PA-1-Executable.pdb
